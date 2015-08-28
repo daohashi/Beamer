@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="css.css" />
+	<script async type="text/javascript" src="main.js"></script>
+	<script async type="text/javascript" src="jquery-1.10.2.min.js"></script>
+</head>
+<body>
+	<div id="s_menu" class="screen hidden">
+		<div class="btitle">BEAMER</div>
+		<ul class="med menu">
+			<li><a id="play">PLAY</a></li>
+			<li><a id="packs">LEVELS</a></li>
+			<li><a id="info" >INFO</a></li>
+			<li class=" small">COPYRIGHT &copy; 2013</li>
+		</ul>   
+	</div>
+	<div id="s_info" class="hidden screen">
+		<div class="btitle">BEAMER</div>
+		<span class="smed">Beamer was developed by Daniel Ohashi.</span><br>
+		<a class="med back" id="info_back">BACK</a>
+	</div>
+	<div id="s_levels1" class="hidden screen">
+		<div class="btitle">BEAMER</div>
+		<ul class="med levels">
+			<li><a>1</a></li><li><a>2</a></li><li><a>3</a></li><li><a>4</a></li><li><a>5</a></li>
+			<li><a>6</a></li><li><a>7</a></li><li><a>8</a></li><li><a>9</a></li><li><a>10</a></li>
+			<li><a>11</a></li><li><a>12</a></li><li><a>13</a></li><li><a>14</a></li><li><a>15</a></li>
+			<li><a>16</a></li><li><a>17</a></li><li><a>18</a></li><li><a>19</a></li><li><a>20</a></li>
+			<li><a>21</a></li><li><a>22</a></li><li><a>23</a></li><li><a>24</a></li><li><a>25</a></li>
+		</ul>
+		<a class="med back" id="levels_back1">BACK</a>
+	</div>
+	<div id="s_levels2" class="hidden screen">
+		<div class="btitle">BEAMER</div>
+		<ul class="med levels">
+			<li><a>26</a></li><li><a>27</a></li><li><a>28</a></li><li><a>29</a></li><li><a>30</a></li>
+			<li><a>31</a></li><li><a>32</a></li><li><a>33</a></li><li><a>34</a></li><li><a>35</a></li>
+			<li><a>36</a></li><li><a>37</a></li><li><a>38</a></li><li><a>39</a></li><li><a>40</a></li>
+			<li><a>41</a></li><li><a>42</a></li><li><a>43</a></li><li><a>44</a></li><li><a>45</a></li>
+			<li><a>46</a></li><li><a>47</a></li><li><a>48</a></li><li><a>49</a></li><li><a>50</a></li>
+		</ul>
+		<a class="med back" id="levels_back2">BACK</a>
+	</div>
+	<div id="s_levels3" class="hidden screen">
+		<div class="btitle">BEAMER</div>
+		<ul class="med levels">
+			<li><a>51</a></li><li><a>52</a></li><li><a>53</a></li><li><a>54</a></li><li><a>55</a></li>
+			<li><a>56</a></li><li><a>57</a></li><li><a>58</a></li><li><a>59</a></li><li><a>60</a></li>
+			<li><a>61</a></li><li><a>62</a></li><li><a>63</a></li><li><a>64</a></li><li><a>65</a></li>
+			<li><a>66</a></li><li><a>67</a></li><li><a>68</a></li><li><a>69</a></li><li><a>70</a></li>
+			<li><a>71</a></li><li><a>72</a></li><li><a>73</a></li><li><a>74</a></li><li><a>75</a></li>
+		</ul>
+		<a class="med back" id="levels_back3">BACK</a>
+	</div>
+	<div id="s_packs" class="hidden screen">
+		<div class="btitle">BEAMER</div>
+		<ul class="med packs">
+			<li><a id="packs_one">PACK ONE</a></li>
+			<li><a id="packs_two">PACK TWO</a></li>
+			<li><a id="packs_three">PACK THREE</a></li>
+		</ul>
+		<a class="med back" id="packs_back">BACK</a>
+	</div>
+	<div id="s_play" class="hidden screen">
+		<div class="mtitle">1</div>
+		<canvas id="canvas" width=600 height=600>CANVAS NOT SUPPORTED</canvas>
+		<a class="med" id="play_back">BACK</a><a class="med" id="play_reset">RESET</a>
+	</div>
+	<div id="win" class="hidden screen">
+		<div class="btitle">BEAMER</div>
+		<span class="med">WOOHOO!<br>YOU BEAT THE GAME</span><br>
+		<a class="med back" id="win_back">BACK</a>
+	</div>
+	<div id="s_tut" class="hidden screen">
+		<div class="btitle">BEAMER</div>
+		<span class="smed">
+			The goal in Beamer is to clear all the 
+			<span class="red">c</span><span 
+			class="yellow">o</span><span 
+			class="green">l</span><span 
+			class="blue">o</span><span 
+			class="purple">r</span><span 
+			class="red">e</span><span 
+			class="yellow">d</span>
+			pads<br /><br />
+			You can clear pads by moving from them<br /><br />
+			Move by swiping
+		</span>
+		<a class="med back" id="tut_next">NEXT</a>
+	</div>
+	<div id="s_tut2" class="hidden screen">
+		<div class="btitle">BEAMER</div>
+		<span class="smed">
+			<span class="green">Green</span> pads move the black marker by 1 <br />
+			<span class="yellow">Yellow</span> pads by 2 <br />
+			<span class="purple">Purple</span> pads by 3 <br />
+			<span class="blue">Blue</span> pads act as 2 <span class="green">greens</span><br />
+			<span class="red">Red</span> pads act as 2 <span class="yellow">yellows</span><br />
+		</span>
+		<a class="med back" id="tut_play">PLAY</a>
+	</div>
+</body>
+</html>
