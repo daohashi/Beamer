@@ -11,19 +11,15 @@
 }
 
 body{
-
+	position: fixed;
+	width: 100%;
+	height: 100%;
     overflow:hidden;
-
--webkit-user-select: none;
-
+	-webkit-user-select: none;
     text-align:center;
-
     font-family:"slk";
-
     color:rgb(255,255,255);
-
     background-color:rgb(0,0,0);
-
     margin:0px;
 
 }
